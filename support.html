@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — DIP Dating App</title>
+  <link rel="icon" type="image/png" href="app_icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --teal: #8ED6DC; --navy: #2E3A78; --pink: #E93E8F; --white: #FFFFFF; --light: #F0FAFB; --text: #1a2340; --muted: #6b7a9a; }
+    body { font-family: 'Quicksand', sans-serif; color: var(--text); background: var(--white); }
+
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: var(--navy); }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 32px; }
+    .nav-logo span { font-size: 20px; font-weight: 700; color: var(--white); }
+
+    .hero-small {
+      background: linear-gradient(150deg, #8ED6DC 0%, #5ab8c8 40%, #2E3A78 100%);
+      padding: 80px 24px 60px; text-align: center;
+    }
+    .hero-small h1 { font-size: 40px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .hero-small p { color: rgba(255,255,255,0.8); font-size: 16px; font-weight: 500; }
+
+    .content { max-width: 800px; margin: 0 auto; padding: 64px 24px; }
+
+    .contact-card {
+      background: linear-gradient(135deg, var(--navy) 0%, #1a2558 100%);
+      border-radius: 24px;
+      padding: 48px 40px;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .contact-card h2 { font-size: 28px; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+    .contact-card p { color: rgba(255,255,255,0.75); font-size: 16px; font-weight: 500; margin-bottom: 28px; line-height: 1.6; }
+    .btn-email {
+      display: inline-block;
+      background: var(--pink);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-email:hover { opacity: 0.85; }
+
+    h2.section { font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 24px; }
+
+    .faq { display: flex; flex-direction: column; gap: 16px; margin-bottom: 64px; }
+
+    .faq-item {
+      border: 2px solid #e8f4f6;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      width: 100%;
+      background: var(--light);
+      border: none;
+      padding: 20px 24px;
+      text-align: left;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-q::after { content: '+'; font-size: 22px; color: var(--pink); }
+    .faq-q.open::after { content: '−'; }
+
+    .faq-a {
+      display: none;
+      padding: 0 24px 20px;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .faq-a.open { display: block; }
+
+    footer { background: #0f1736; padding: 32px 24px; text-align: center; margin-top: 0; }
+    .footer-links { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 16px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,0.5); font-size: 14px; font-weight: 600; text-decoration: none; }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.3); font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">
+      <img src="logo_main.png" alt="DIP" />
+      <span>DIP</span>
+    </a>
+  </nav>
+
+  <div class="hero-small">
+    <h1>Support</h1>
+    <p>We're here to help</p>
+  </div>
+
+  <div class="content">
+
+    <div class="contact-card">
+      <h2>Get in touch</h2>
+      <p>Have a question, found a bug, or need help with your account? Send us an email and we'll get back to you as soon as possible — usually within 24 hours.</p>
+      <a href="mailto:support@dipdating.com" class="btn-email">support@dipdating.com</a>
+    </div>
+
+    <h2 class="section">Frequently asked questions</h2>
+    <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a Dip?</button>
+        <div class="faq-a">A Dip is a matchmaking post created by a Matcher — someone who thinks two people on the app would be great together. They write a short note explaining why, and other Matchers can endorse the Dip. When enough people agree, the match is revealed to both people.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Do I have to be single to use DIP?</button>
+        <div class="faq-a">Not at all. You can sign up as a Matcher-only, which means your profile is completely hidden from the dating pool. You can browse, create Dips, and help others find love without being seen as someone who is available.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Who can see my profile?</button>
+        <div class="faq-a">If you're in Find Love mode, your profile is visible to Matchers browsing the app — this is how you get matched. If you're in Matcher-only mode, your profile is hidden from everyone browsing for dates. You can change your mode at any time in your profile settings.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">How do I delete my account?</button>
+        <div class="faq-a">Go to Settings → scroll to the bottom → Delete Account. This will permanently remove your profile, photos, matches, and all associated data within 30 days. This action cannot be undone.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">I've been matched with someone — what happens next?</button>
+        <div class="faq-a">Once a match is revealed, you'll both be able to see who the Matchers were and the notes they wrote about why you'd work. From there, you can start a conversation directly in the app. There's no pressure — take your time.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">How do I report someone?</button>
+        <div class="faq-a">On any profile or in any chat, tap the three-dot menu and select Report. You can also block a user from the same menu. All reports are reviewed by our moderation team. For urgent safety concerns, please email us directly at support@dipdating.com.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Is DIP free?</button>
+        <div class="faq-a">Yes, DIP is free to download and use. Core features including creating Dips, receiving matches, and messaging are free. Premium features may be introduced in future updates.</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/privacy.html">Privacy Policy</a></li>
+      <li><a href="/support.html">Support</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 DIP Dating App. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggle(btn) {
+      btn.classList.toggle('open');
+      btn.nextElementSibling.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
