@@ -61,87 +61,177 @@
   </div>
 
   <div class="content">
-    <p class="updated">Last updated: 21 May 2026</p>
+    <p class="updated">Last updated: 23 June 2026</p>
 
     <p>DIP Dating App ("DIP", "we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the "Service"). Please read this policy carefully. If you do not agree with the terms of this policy, please do not use the Service.</p>
 
+    <!-- ===== 1. INFORMATION WE COLLECT ===== -->
     <h2>1. Information We Collect</h2>
 
-    <h3>Information you provide directly</h3>
+    <h3>1.1 Information You Provide Directly</h3>
     <ul>
       <li><strong>Account information:</strong> name, email address, date of birth, gender</li>
-      <li><strong>Profile information:</strong> biography, job title, education, height, relationship preferences, interests, profile photos</li>
-      <li><strong>Location:</strong> your city or general location (we do not track precise GPS location continuously)</li>
-      <li><strong>Messages:</strong> content of messages sent between matched users within the app</li>
-      <li><strong>Verification information:</strong> selfie photos and ID documents submitted for optional identity verification</li>
+      <li><strong>Authentication credentials:</strong> email/password, or third-party authentication tokens (Apple Sign In, Google Sign In)</li>
+      <li><strong>Profile information:</strong> biography, job title, education, height, relationship preferences ("looking for"), interests, profile photos (up to 6), profile prompts and answers</li>
+      <li><strong>User mode:</strong> your selected role (Find Love, Matcher, or Both)</li>
+      <li><strong>Location data:</strong> your city, country, and coordinates (provided via GPS or manually entered). Coordinates are fuzzed to approximately 1 kilometre precision before being shared with other users</li>
+      <li><strong>Messages:</strong> text messages, GIF stickers, emoji stickers, and voice notes sent between matched users within the app</li>
+      <li><strong>Verification materials:</strong> selfie photos and government-issued ID documents submitted for optional identity verification, as well as email address and phone number used for verification steps</li>
+      <li><strong>Dips and Date Updates:</strong> matchmaking suggestions you create (including written explanations, matcher notes, and pairings), Date Update stories, photos, comments, and hearts/endorsements you submit</li>
+      <li><strong>Reports and feedback:</strong> reports you submit about other users, appeal submissions, and support communications</li>
+      <li><strong>Subscription information:</strong> your subscription tier (Free or Gold) and subscription status (managed via RevenueCat and your Platform)</li>
+      <li><strong>Preferences and settings:</strong> notification preferences, privacy settings (show age, show distance, show online status), quiet hours, age and distance filters, and app security settings</li>
     </ul>
 
-    <h3>Information collected automatically</h3>
+    <h3>1.2 Information Collected Automatically</h3>
     <ul>
-      <li><strong>Usage data:</strong> how you interact with the app, features used, time spent</li>
-      <li><strong>Device information:</strong> device type, operating system, unique device identifiers</li>
-      <li><strong>Crash reports:</strong> error logs and diagnostic information to improve the app</li>
+      <li><strong>Usage data:</strong> how you interact with the app, features used, screens visited, time spent, Dips created, matches received, messages sent</li>
+      <li><strong>Device information:</strong> device type, operating system, app version, unique device identifiers, push notification tokens</li>
+      <li><strong>Crash reports and diagnostics:</strong> error logs and diagnostic information collected via Firebase Crashlytics to improve the app</li>
+      <li><strong>Online status:</strong> whether you are currently active in the app, and your last active timestamp</li>
+      <li><strong>Leaderboard statistics:</strong> your score, Dips created count, success rate, connections count, and ranking data</li>
+      <li><strong>Moderation data:</strong> account status (active, warned, suspended, banned), warning count, report history, and appeal history</li>
     </ul>
 
+    <h3>1.3 Information from Third Parties</h3>
+    <ul>
+      <li><strong>Authentication providers:</strong> if you sign in via Apple or Google, we receive your name and email address (or a relay email address) as authorised by you during the sign-in process</li>
+      <li><strong>RevenueCat:</strong> subscription status, purchase events, and billing period information</li>
+      <li><strong>Google Cloud Vision API:</strong> content classification results for photos you upload (safe search annotations)</li>
+    </ul>
+
+    <!-- ===== 2. HOW WE USE YOUR INFORMATION ===== -->
     <h2>2. How We Use Your Information</h2>
     <p>We use the information we collect to:</p>
     <ul>
       <li>Create and manage your account</li>
-      <li>Display your profile to other users for matchmaking purposes</li>
-      <li>Facilitate connections between matched users</li>
-      <li>Enable messaging between matched users</li>
-      <li>Operate the Matcher and Dips features of the app</li>
-      <li>Maintain the leaderboard and user statistics</li>
-      <li>Send notifications about matches, messages, and app activity</li>
+      <li>Display your profile to other users for matchmaking purposes (in accordance with your selected mode and privacy settings)</li>
+      <li>Facilitate the Dip matchmaking system, including tracking matcher endorsements and triggering match reveals</li>
+      <li>Enable messaging between matched users, including delivery status and read receipts (Gold feature)</li>
+      <li>Operate the Dips feed, Date Updates, community comments, and hearts/endorsements</li>
+      <li>Maintain the leaderboard and calculate user statistics</li>
+      <li>Process and display location-based features, including distance calculations and proximity filtering</li>
+      <li>Send push notifications and in-app notifications about matches, messages, Dips, leaderboard updates, and system announcements</li>
+      <li>Process identity verification requests and display verified badges</li>
+      <li>Manage subscriptions and subscription-gated features (Gold tier)</li>
+      <li>Display advertisements to free-tier users via third-party advertising networks</li>
+      <li>Detect, prevent, and respond to fraud, abuse, security incidents, and violations of our Terms of Service</li>
+      <li>Moderate content using automated systems (keyword filtering, Google Cloud Vision API) and manual human review</li>
+      <li>Process reports, appeals, and support requests</li>
       <li>Improve, personalise, and develop the Service</li>
-      <li>Detect and prevent fraudulent or abusive behaviour</li>
       <li>Comply with legal obligations</li>
+      <li>Generate aggregated, anonymised analytics for internal use</li>
     </ul>
 
+    <!-- ===== 3. HOW WE SHARE YOUR INFORMATION ===== -->
     <h2>3. How We Share Your Information</h2>
     <p>We do not sell your personal information. We may share your information in the following circumstances:</p>
 
-    <h3>With other users</h3>
-    <p>Your profile information (name, photos, bio, interests, age, location) is visible to other users of the app for the purpose of matchmaking. Users in Matcher-only mode have their profile hidden from the dating pool.</p>
-
-    <h3>Service providers</h3>
-    <p>We use the following third-party services to operate the app:</p>
+    <h3>3.1 With Other Users</h3>
+    <p>Your profile information (name, photos, bio, interests, age, approximate location, user mode, and verified status) is visible to other users in accordance with your mode and privacy settings. Specifically:</p>
     <ul>
-      <li><strong>Google Firebase:</strong> authentication, database storage, file storage, and analytics (Google Privacy Policy applies)</li>
-      <li><strong>Google Cloud Vision API:</strong> automated scanning of uploaded photos to detect inappropriate content</li>
-      <li><strong>Apple Sign In / Google Sign In:</strong> optional third-party authentication</li>
+      <li><strong>Find Love mode:</strong> your profile is visible to Matchers and other users in the Discover feed</li>
+      <li><strong>Matcher mode:</strong> your profile is hidden from the dating pool; only your name and photo are visible when you create Dips or appear on the leaderboard</li>
+      <li><strong>Messages:</strong> message content, delivery status, and read receipts are shared with the recipient</li>
+      <li><strong>Dips and Date Updates:</strong> content you create in Dips and Date Updates is visible to the DIP community</li>
+      <li><strong>Leaderboard:</strong> your name, photo, and statistics are visible on the leaderboard</li>
     </ul>
 
-    <h3>Legal requirements</h3>
-    <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities.</p>
+    <h3>3.2 Service Providers</h3>
+    <p>We use the following third-party services to operate the app:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> authentication, Firestore database storage, Cloud Storage for photos, Firebase Analytics, Firebase Crashlytics, and Firebase Cloud Functions (Google Privacy Policy applies)</li>
+      <li><strong>Google Cloud Vision API:</strong> automated scanning of uploaded photos to detect inappropriate content (Google Privacy Policy applies)</li>
+      <li><strong>Google Geocoding API / OpenStreetMap Nominatim:</strong> reverse geocoding of coordinates to city/country names</li>
+      <li><strong>Apple Sign In / Google Sign In:</strong> optional third-party authentication (respective privacy policies apply)</li>
+      <li><strong>RevenueCat:</strong> subscription management, purchase verification, and billing event tracking (RevenueCat Privacy Policy applies)</li>
+      <li><strong>Advertising networks:</strong> third-party ad networks serve advertisements to free-tier users and may collect non-personally-identifiable information for ad targeting</li>
+    </ul>
 
+    <h3>3.3 Legal Requirements</h3>
+    <p>We may disclose your information if required to do so by law, regulation, legal process, or enforceable governmental request, or in response to valid requests by public authorities (including law enforcement). We may also disclose information when we believe in good faith that disclosure is necessary to protect the rights, property, or safety of DIP, our users, or the public.</p>
+
+    <h3>3.4 Business Transfers</h3>
+    <p>In the event of a merger, acquisition, reorganisation, bankruptcy, or sale of all or a portion of our assets, your personal information may be transferred as part of that transaction. We will notify you via the app or email of any change in ownership or uses of your personal information.</p>
+
+    <!-- ===== 4. DATA RETENTION ===== -->
     <h2>4. Data Retention</h2>
-    <p>We retain your personal data for as long as your account is active or as needed to provide you with the Service. You may delete your account at any time from within the app (Settings → Delete Account), which will permanently remove your profile and associated data within 30 days.</p>
+    <p>We retain your personal data for as long as your account is active or as needed to provide you with the Service. Specific retention periods include:</p>
+    <ul>
+      <li><strong>Account data:</strong> retained while your account is active, deleted within 30 days of account deletion</li>
+      <li><strong>Messages and conversations:</strong> retained for legal and moderation purposes even after account deletion or the deletion of the other participant's account</li>
+      <li><strong>Moderation records:</strong> reports, warnings, suspensions, bans, and appeal records are retained indefinitely for safety and legal purposes</li>
+      <li><strong>Verification materials:</strong> selfie photos and ID documents are retained while your account is active and for a reasonable period after account deletion for fraud prevention purposes</li>
+      <li><strong>Anonymised analytics:</strong> aggregated, anonymised data may be retained indefinitely</li>
+    </ul>
+    <p>You may delete your account at any time from within the app (Settings → Delete Account), which will permanently remove your profile and associated personal data within 30 days, subject to the retention exceptions listed above.</p>
 
+    <!-- ===== 5. YOUR RIGHTS ===== -->
     <h2>5. Your Rights</h2>
     <p>Depending on your location, you may have the following rights regarding your personal data:</p>
     <ul>
-      <li><strong>Access:</strong> request a copy of the data we hold about you</li>
-      <li><strong>Correction:</strong> request correction of inaccurate data</li>
-      <li><strong>Deletion:</strong> request deletion of your data</li>
-      <li><strong>Portability:</strong> request your data in a portable format</li>
-      <li><strong>Objection:</strong> object to certain processing of your data</li>
+      <li><strong>Access:</strong> request a copy of the personal data we hold about you</li>
+      <li><strong>Correction:</strong> request correction of inaccurate or incomplete data</li>
+      <li><strong>Deletion:</strong> request deletion of your personal data (subject to legal retention requirements)</li>
+      <li><strong>Portability:</strong> request your data in a structured, commonly used, machine-readable format</li>
+      <li><strong>Objection:</strong> object to certain processing of your data, including direct marketing</li>
+      <li><strong>Restriction:</strong> request restriction of processing in certain circumstances</li>
+      <li><strong>Withdraw consent:</strong> where processing is based on consent, withdraw that consent at any time</li>
     </ul>
-    <p>To exercise any of these rights, contact us at <a href="mailto:privacy@dipdating.com">privacy@dipdating.com</a>.</p>
+    <p>To exercise any of these rights, contact us at <a href="mailto:privacy@dipdating.com">privacy@dipdating.com</a>. We will respond to your request within 30 days. We may require you to verify your identity before processing your request.</p>
 
+    <h3>Australian Privacy Act</h3>
+    <p>If you are located in Australia, your personal information is handled in accordance with the Australian Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs). You have the right to access and correct your personal information, and to make a complaint to the Office of the Australian Information Commissioner (OAIC) if you believe we have breached the APPs.</p>
+
+    <!-- ===== 6. DATA SECURITY ===== -->
     <h2>6. Data Security</h2>
-    <p>We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, alteration, disclosure, or destruction. All data is encrypted in transit and at rest. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+    <p>We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, alteration, disclosure, or destruction. These measures include:</p>
+    <ul>
+      <li>Encryption of data in transit (TLS/SSL) and at rest</li>
+      <li>Firebase Security Rules restricting database access to authorised users</li>
+      <li>Secure storage of verification materials</li>
+      <li>Location data fuzzing (coordinates rounded to ~1 km precision) before sharing with other users</li>
+      <li>Automated content moderation to detect and prevent harmful content</li>
+      <li>Role-based access control for administrative functions</li>
+    </ul>
+    <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>DIP is intended for users aged 17 and older. We do not knowingly collect personal information from anyone under the age of 17. If we become aware that a user is under 17, we will immediately delete their account and associated data.</p>
+    <!-- ===== 7. LOCATION DATA ===== -->
+    <h2>7. Location Data</h2>
+    <p>DIP collects and processes location data as follows:</p>
+    <ul>
+      <li><strong>Collection:</strong> We collect your location via device GPS (with your permission) or through manual entry. GPS location is collected on-demand (e.g., when you open the app or refresh your location), not continuously in the background</li>
+      <li><strong>Precision:</strong> Your precise GPS coordinates are stored internally for proximity calculations. Before sharing your location with other users, coordinates are fuzzed (rounded) to approximately 1 kilometre precision</li>
+      <li><strong>Geohashing:</strong> A geohash is computed from your coordinates for efficient proximity queries</li>
+      <li><strong>Display:</strong> Other users see your city/suburb name and approximate distance, not your exact coordinates</li>
+      <li><strong>Control:</strong> You can control whether your distance is shown to other users via privacy settings. You can manually set or update your location at any time</li>
+      <li><strong>Gold feature:</strong> Gold subscribers can set an alternate "Discover location" for matchmaking in a different area</li>
+    </ul>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the date at the top of this page and, where appropriate, by sending you a notification within the app. Your continued use of the Service after changes are posted constitutes your acceptance of the updated policy.</p>
+    <!-- ===== 8. CHILDREN'S PRIVACY ===== -->
+    <h2>8. Children's Privacy</h2>
+    <p>DIP is intended for users aged 17 and older. We do not knowingly collect personal information from anyone under the age of 17. If we become aware that a user is under 17, we will immediately disable their account and delete their associated data. If you believe a user may be under 17, please report them using the in-app reporting feature or contact us at <a href="mailto:support@dipdating.com">support@dipdating.com</a>.</p>
 
-    <h2>9. Contact Us</h2>
+    <!-- ===== 9. COOKIES AND TRACKING ===== -->
+    <h2>9. Cookies and Tracking Technologies</h2>
+    <p>The DIP website may use cookies and similar technologies (local storage, session storage) to maintain session state and improve user experience. The mobile app uses Firebase Analytics and Crashlytics for usage analytics and crash reporting. Third-party advertising networks in the free tier may use their own tracking technologies in accordance with their respective privacy policies.</p>
+    <p>You can manage cookie preferences through your browser settings. Disabling cookies may affect the functionality of the website.</p>
+
+    <!-- ===== 10. INTERNATIONAL DATA TRANSFERS ===== -->
+    <h2>10. International Data Transfers</h2>
+    <p>Your information may be transferred to and processed in countries other than your country of residence, including the United States (where Google and Firebase infrastructure is located) and Australia (where DIP is based). These countries may have data protection laws that are different from the laws of your country. By using the Service, you consent to the transfer of your information to these countries.</p>
+    <p>Where required by applicable law, we ensure that appropriate safeguards are in place to protect your personal information during international transfers.</p>
+
+    <!-- ===== 11. CHANGES TO THIS POLICY ===== -->
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the date at the top of this page and, where appropriate, by sending you a notification within the app. Your continued use of the Service after changes are posted constitutes your acceptance of the updated policy. If you do not agree to the updated policy, you must stop using the Service and delete your account.</p>
+
+    <!-- ===== 12. CONTACT US ===== -->
+    <h2>12. Contact Us</h2>
     <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
     <ul>
-      <li>Email: <a href="mailto:privacy@dipdating.com">privacy@dipdating.com</a></li>
+      <li>Privacy enquiries: <a href="mailto:privacy@dipdating.com">privacy@dipdating.com</a></li>
+      <li>General support: <a href="mailto:support@dipdating.com">support@dipdating.com</a></li>
       <li>Website: <a href="https://www.dipdating.com/support.html">www.dipdating.com/support.html</a></li>
     </ul>
   </div>
@@ -149,10 +239,11 @@
   <footer>
     <ul class="footer-links">
       <li><a href="/">Home</a></li>
+      <li><a href="/terms.html">Terms of Service</a></li>
       <li><a href="/privacy.html">Privacy Policy</a></li>
       <li><a href="/support.html">Support</a></li>
     </ul>
-    <p class="footer-copy">© 2026 DIP Dating App. All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 DIP Dating App. All rights reserved.</p>
   </footer>
 
 </body>
