@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Child Safety Standards — DIP Dating App</title>
+  <link rel="icon" type="image/png" href="app_icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --teal: #8ED6DC; --navy: #2E3A78; --pink: #E93E8F; --white: #FFFFFF; --light: #F0FAFB; --text: #1a2340; --muted: #6b7a9a; }
+    body { font-family: 'Quicksand', sans-serif; color: var(--text); background: var(--white); }
+
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 40px; background: var(--navy);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 32px; }
+    .nav-logo span { font-size: 20px; font-weight: 700; color: var(--white); }
+
+    .hero-small {
+      background: linear-gradient(150deg, #8ED6DC 0%, #5ab8c8 40%, #2E3A78 100%);
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .hero-small h1 { font-size: 40px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .hero-small p { color: rgba(255,255,255,0.8); font-size: 16px; font-weight: 500; }
+
+    .content { max-width: 800px; margin: 0 auto; padding: 64px 24px; }
+
+    h2 { font-size: 22px; font-weight: 700; color: var(--navy); margin: 40px 0 12px; }
+    h3 { font-size: 17px; font-weight: 700; color: var(--navy); margin: 24px 0 8px; }
+    p { font-size: 16px; color: var(--muted); line-height: 1.75; font-weight: 500; margin-bottom: 14px; }
+    ul { padding-left: 20px; margin-bottom: 14px; }
+    li { font-size: 16px; color: var(--muted); line-height: 1.75; font-weight: 500; margin-bottom: 6px; }
+    a { color: var(--pink); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .updated { font-size: 14px; color: var(--muted); margin-bottom: 32px; padding: 12px 16px; background: var(--light); border-radius: 8px; }
+    .callout { font-size: 15px; color: var(--navy); font-weight: 700; line-height: 1.75; margin-bottom: 14px; padding: 16px 20px; background: var(--light); border-left: 4px solid var(--pink); border-radius: 4px; }
+
+    footer { background: #0f1736; padding: 32px 24px; text-align: center; margin-top: 64px; }
+    .footer-links { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 16px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,0.5); font-size: 14px; font-weight: 600; text-decoration: none; }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.3); font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">
+      <img src="logo_main.png" alt="DIP" />
+      <span>DIP</span>
+    </a>
+  </nav>
+
+  <div class="hero-small">
+    <h1>Child Safety Standards</h1>
+    <p>Our commitment to preventing child sexual abuse and exploitation</p>
+  </div>
+
+  <div class="content">
+    <p class="updated">Last updated: 13 July 2026</p>
+
+    <p class="callout">DIP has zero tolerance for child sexual abuse material (CSAM) and child sexual abuse and exploitation (CSAE) of any kind. DIP is an adults-only platform, and any account found to be associated with CSAE is immediately and permanently removed.</p>
+
+    <h2>1. Who Can Use DIP</h2>
+    <p>DIP is restricted to users aged 18 and over. Every account must confirm a date of birth at registration, and the app calculates age from that date to block anyone under 18 from creating an account or completing onboarding. This applies to every path into the app, including sign-up via email, Google, and Apple.</p>
+
+    <h2>2. Prevention Measures</h2>
+    <p>DIP is built with the following safeguards to prevent CSAE on the platform:</p>
+    <ul>
+      <li><strong>Age gating at registration:</strong> account creation is blocked for anyone who does not confirm they are 18 or older.</li>
+      <li><strong>Identity and photo verification:</strong> users can (and in some cases must) submit a selfie and government-issued ID for review before their account is marked verified.</li>
+      <li><strong>Automated photo content scanning:</strong> profile photos are scanned for explicit or inappropriate content before being accepted, and flagged photos are routed to human review rather than being published automatically.</li>
+      <li><strong>Human moderation team:</strong> our admin and moderation team reviews flagged photos, reported accounts, and reported conversations through a dedicated internal review panel.</li>
+      <li><strong>Reporting and blocking on every profile and conversation:</strong> any user can report or block another user directly from their profile or from within a chat, at any time.</li>
+      <li><strong>Account enforcement:</strong> accounts found in violation of these standards are warned, suspended, or permanently banned, and banned accounts are blocked from creating new accounts to re-enter the platform.</li>
+    </ul>
+
+    <h2>3. How to Report a Concern</h2>
+    <p>If you encounter content or behaviour on DIP that concerns you, including anything related to child sexual abuse or exploitation, you can report it in either of the following ways:</p>
+    <ul>
+      <li><strong>In-app:</strong> use the "Report" option available from any user's profile or from within a conversation. Reports are routed directly to our moderation team for review.</li>
+      <li><strong>By email:</strong> contact <a href="mailto:support@dipdating.com">support@dipdating.com</a>. Reports involving a minor are treated as an immediate priority.</li>
+    </ul>
+    <p>We do not require you to have an account or be a matched user to report a safety concern about DIP by email.</p>
+
+    <h2>4. Our Response Process</h2>
+    <p>Reports involving suspected CSAE are escalated immediately and reviewed ahead of routine moderation queues. Where we identify or are made aware of CSAM, we remove the associated content and account and, where legally required, report it to the relevant authorities, including the National Center for Missing &amp; Exploited Children (NCMEC), in compliance with our legal obligations.</p>
+
+    <h2>5. Point of Contact</h2>
+    <p>Our designated point of contact for questions about these standards and our CSAE prevention practices is reachable at <a href="mailto:support@dipdating.com">support@dipdating.com</a>.</p>
+  </div>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/terms.html">Terms of Service</a></li>
+      <li><a href="/privacy.html">Privacy Policy</a></li>
+      <li><a href="/child-safety-standards.html">Child Safety Standards</a></li>
+      <li><a href="/support.html">Support</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 DIP Dating App. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
