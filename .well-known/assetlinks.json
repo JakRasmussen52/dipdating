@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.dip.dip_app",
+    "sha256_cert_fingerprints": ["AB:20:48:64:0A:CB:79:89:54:C0:B3:13:13:1A:9D:4B:53:1E:E9:63:62:32:81:0C:67:7F:03:C6:98:77:43:9F"]
+  }
+}]
